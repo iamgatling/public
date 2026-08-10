@@ -60,3 +60,15 @@ docker-compose
 
 mkdir -p ~/n8n
 cd ~/n8n
+
+docker compose up -d
+
+docker ps
+
+Name:             allow-n8n
+Network:          default
+Direction:        Ingress
+Action:           Allow
+Targets:          All instances in the network
+Source IPv4:      0.0.0.0/0
+Protocols/ports:  TCP:5678
